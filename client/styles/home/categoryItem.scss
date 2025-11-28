@@ -1,0 +1,248 @@
+$category-gap: 10px;
+$category-padding: 8px 14px 8px 12px;
+$icon-size: 34px;
+$font-sm: 11px;
+$font-md: 14px;
+
+@mixin flex-center($gap: 0) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin icon-size($size) {
+  width: $size;
+  height: $size;
+
+  svg {
+    width: $size;
+    height: $size;
+  }
+}
+
+.app_categories_items {
+  display: flex;
+  width: 100%;
+  margin: 40px 0 0;
+
+  > ul {
+    @include flex-center($category-gap);
+    justify-content: space-between;
+    width: 100%;
+
+    > li {
+      display: flex;
+
+      > a {
+        @include flex-center(8px);
+        padding: $category-padding;
+        background: $bgnewcatg;
+        border: 1px solid lighten($bgcategory, 16%);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+
+        > span {
+          @include icon-size($icon-size);
+
+          > svg {
+            height: auto;
+          }
+        }
+
+        .app_category_text {
+          display: flex;
+          flex-direction: column;
+          color: $black;
+
+          > h6 {
+            font-size: $font-md;
+            font-weight: 700;
+            line-height: 16px;
+          }
+
+          > p {
+            font-size: $font-sm;
+            font-weight: 700;
+            line-height: 16px;
+          }
+        }
+      }
+
+      &:hover > a {
+        background: $hoverbg;
+        border-color: darken($btn, 6%);
+
+        > span {
+          svg path {
+            stroke: darken($btn, 6%);
+          }
+
+          &.svg_item_color svg path {
+            fill: darken($btn, 6%);
+            stroke-width: 0;
+          }
+        }
+
+        .app_category_text {
+          h6,
+          p {
+            color: darken($btn, 6%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .app_categories_items > ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+
+    > li {
+      flex: 0 0 auto;
+    }
+  }
+}
+
+.app_categories_cover {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 40px;
+
+  h3 {
+    display: flex;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .app_category_list_items {
+    display: flex;
+    width: 100%;
+
+    > ul {
+      display: flex;
+      width: 100%;
+      gap: 18px;
+
+      > li {
+        width: 100%;
+
+        > a {
+          display: flex;
+          background: $white;
+          border: 1px solid $lborder;
+          border-radius: 6px;
+          box-sizing: border-box;
+          padding: 14px 20px 16px;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+
+          > figure {
+            height: 140px;
+            display: flex;
+            width: 100%;
+            display: flex;
+            margin-bottom: 20px;
+            position: relative;
+            align-items: center;
+
+            > img {
+              width: 140px;
+              height: 140px;
+              mix-blend-mode: darken;
+            }
+          }
+
+          > h4 {
+            color: $black;
+            font-size: 15px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2px;
+          }
+
+          &:hover {
+            background: $btnLight;
+          }
+        }
+      }
+    }
+  }
+}
+
+.app_brands_cover {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  h3 {
+    display: flex;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .app_brand_list_items {
+    display: flex;
+    width: 100%;
+
+    > ul {
+      display: flex;
+      width: 100%;
+      gap: 18px;
+
+      > li {
+        width: 100%;
+
+        > a {
+          display: flex;
+          background: $white;
+          border: 1px solid $lborder;
+          border-radius: 6px;
+          box-sizing: border-box;
+          padding: 14px 20px 16px;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+
+          > figure {
+            height: 140px;
+            display: flex;
+            width: 100%;
+            display: flex;
+            margin-bottom: 20px;
+            position: relative;
+            align-items: center;
+
+            > img {
+              width: 140px;
+              height: 140px;
+              mix-blend-mode: darken;
+            }
+          }
+
+          > h4 {
+            color: $black;
+            font-size: 15px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2px;
+          }
+
+          &:hover {
+            background: $btnLight;
+          }
+        }
+      }
+    }
+  }
+}

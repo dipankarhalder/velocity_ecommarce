@@ -1,0 +1,147 @@
+// ================================
+// Variables
+// ================================
+$font-size-small: 12px;
+$icon-size: 13px;
+$dot-size: 4px;
+$dot-top: 7px;
+$dot-left: 0px;
+$dot-color: $black;
+$highlight-color: $btn;
+
+// ================================
+// Mixins
+// ================================
+@mixin flex-center($direction: row, $gap: 0px) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin icon-size($size: $icon-size) {
+  width: $size;
+  height: $size;
+
+  svg {
+    width: $size;
+    height: $size;
+  }
+}
+
+@mixin dot-marker {
+  content: "";
+  position: absolute;
+  top: $dot-top;
+  left: $dot-left;
+  width: $dot-size;
+  height: $dot-size;
+  border-radius: 50%;
+  background: $dot-color;
+}
+
+// ================================
+// Layout
+// ================================
+.app_main_wrapper {
+  @include flex-center(column);
+  width: 100%;
+
+  .app_outside_content {
+    width: 100%;
+    @include flex-center(column);
+
+    &.ap_full_bg {
+      background: $topbg;
+    }
+  }
+}
+
+.app_inside_content {
+  width: 100%;
+  @include flex-center(row);
+
+  &.topheader_divide {
+    height: 34px;
+    justify-content: space-between;
+  }
+
+  .app_top_header_left {
+    width: auto;
+
+    > ul {
+      @include flex-center();
+
+      > li {
+        position: relative;
+        margin-right: 20px;
+        padding-left: 20px;
+        font-size: $font-size-small;
+        @include flex-center(row);
+
+        &:after {
+          @include dot-marker;
+        }
+
+        > em {
+          font-style: normal;
+          font-weight: 700;
+          color: $topcol;
+        }
+
+        > span {
+          @include icon-size;
+        }
+
+        > p {
+          font-weight: 700;
+          color: $topcol;
+        }
+
+        &:nth-child(1) {
+          padding-left: 0;
+          gap: 8px;
+
+          &:after {
+            display: none;
+          }
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          gap: 5px;
+
+          a {
+            font-weight: 800;
+            color: $highlight-color;
+          }
+        }
+      }
+    }
+  }
+
+  .app_top_header_right {
+    ul {
+      @include flex-center(row, 28px);
+
+      li {
+        @include flex-center(row);
+        font-size: $font-size-small;
+
+        > a {
+          color: $topcol;
+          @include flex-center(row, 6px);
+
+          > em {
+            font-weight: 700;
+            font-style: normal;
+          }
+
+          > span {
+            @include icon-size;
+          }
+        }
+      }
+    }
+  }
+}

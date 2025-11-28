@@ -1,0 +1,217 @@
+$items-per-row: 5;
+
+.app_main_product_list_container {
+  margin: rem(30) 0;
+}
+.app_product_list_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: rem(25) 0;
+
+  .app_item_product_card {
+    flex-basis: calc(20% - 20px);
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 0 rem(20) rem(20) 0;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    z-index: 1;
+    width: calc(100% / #{$items-per-row} - 20px);
+
+    &:nth-child(#{$items-per-row}n) {
+      margin-right: 0;
+    }
+
+    &::after {
+      content: "";
+      background: #fff;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      margin: 2px;
+      border-radius: 6px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -7px;
+      right: -7px;
+      bottom: -7px;
+      border-radius: 6px;
+      background: conic-gradient(
+        from 0deg,
+        #00fff0 15%,
+        #2200ff 40%,
+        #ff00ea 70%,
+        #00fff0 100%
+      );
+      z-index: 0;
+      opacity: 0;
+      filter: blur(5px);
+      transition: opacity 0.3s;
+      pointer-events: none;
+      animation: none;
+    }
+
+    &:hover::before {
+      opacity: 1;
+      animation: border-rotate 5s linear infinite;
+    }
+
+    @keyframes border-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    & * {
+      z-index: 1;
+    }
+
+    // Figure
+
+    figure {
+      height: auto;
+      min-height: rem(215);
+      display: flex;
+      width: 100%;
+      display: flex;
+      position: relative;
+      align-items: center;
+      border: 2px solid transparent;
+    }
+  }
+}
+
+.app_item_product_card {
+  box-sizing: border-box;
+  width: 100%;
+  background: $white;
+  border: 1px solid $lborder;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  @include transition(all, 0.5s, ease);
+
+  figure {
+    height: 140px;
+    display: flex;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+
+    // > img {
+    // width: 100% !important;
+    // height: auto !important;
+    // object-fit: cover !important;
+    // }
+  }
+
+  .product_card_details {
+    padding: rem(18) rem(20) rem(16);
+    > h3 {
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .app_discount_price {
+      position: absolute;
+      top: 10px;
+      right: 0px;
+      color: $white;
+      background: $btn;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px 3px 10px;
+      border-radius: 6px 0 0 6px;
+    }
+
+    .app_price_and_btn {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      .app_product_price_sec {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        > p {
+          &:nth-child(1) {
+            font-size: 13px;
+            color: $price;
+          }
+          &:nth-child(2) {
+            font-size: 15px;
+            font-weight: 500;
+            color: $btn;
+          }
+        }
+      }
+
+      .app_btn_add {
+        display: flex;
+
+        > button {
+          color: $btn;
+          font-size: 13px;
+          font-weight: 700;
+          padding: 4px 20px;
+          background: $btnLight;
+          height: 34px;
+          cursor: pointer;
+          border-radius: 5px;
+          border: 1px solid $btn;
+        }
+
+        .app_btn_quantity {
+          display: flex;
+          gap: 4px;
+          background: $btn;
+          border-radius: 5px;
+          align-items: center;
+
+          > span {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 800;
+            color: $white;
+          }
+
+          button {
+            color: $btn;
+            font-size: 20px;
+            font-weight: 700;
+            background: $btnLight;
+            width: 32px;
+            height: 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            line-height: 20px;
+            border: 1px solid $btn;
+          }
+        }
+      }
+    }
+  }
+
+  // &:hover {
+  //   border-color: $red;
+  //   box-shadow: 0 0 9px -3px $red;
+  // }
+}

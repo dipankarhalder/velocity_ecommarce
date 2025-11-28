@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "slug": "processor",
+    "name": "AMD Ryzen 7 5800X Processor",
+    "image": "/p1.jpg",
+    "price": 41650,
+    "discount": 4,
+    "rating": 4.5,
+    "reviewsCount": 1523,
+    "stock": 12,
+    "description": "The AMD Ryzen 7 5800X is a high-performance 8-core processor ideal for gaming and productivity.",
+    "specifications": {
+      "Cores/Threads": "8/16",
+      "Base Clock": "3.8GHz",
+      "Max Boost Clock": "4.7GHz",
+      "Socket": "AM4",
+      "TDP": "105W",
+      "Cache": "36MB",
+      "Architecture": "Zen 3"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "processor",
+    "name": "Crucial P3 Plus 1TB NVMe Gen4 Internal SSD",
+    "image": "/p2.jpg",
+    "price": 14900,
+    "discount": 7,
+    "rating": 4.6,
+    "reviewsCount": 897,
+    "stock": 25,
+    "description": "Crucial P3 Plus offers blazing fast Gen4 NVMe speeds for fast boot and load times.",
+    "specifications": {
+      "Capacity": "1TB",
+      "Interface": "NVMe PCIe Gen4 x4",
+      "FormFactor": "M.2 2280",
+      "SequentialRead": "5000MB/s",
+      "SequentialWrite": "4200MB/s",
+      "Warranty": "5 Years"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "processor",
+    "name": "ASUS Dual RTX 5060 OC 8GB GDDR7 Graphics Card",
+    "image": "/p3.jpg",
+    "price": 81250,
+    "discount": 22,
+    "rating": 4.8,
+    "reviewsCount": 621,
+    "stock": 10,
+    "description": "ASUS Dual RTX 5060 OC brings next-gen ray tracing and DLSS 3.0 support in a compact dual-fan design.",
+    "specifications": {
+      "Memory": "8GB GDDR7",
+      "BoostClock": "2595MHz",
+      "Ports": "HDMI 2.1, DisplayPort 1.4a",
+      "Cooling": "Dual Fan",
+      "Architecture": "Ada Lovelace"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "processor",
+    "name": "Dawg Y 990 ARGB E-ATX Mid Tower Case with Pre-installed",
+    "image": "/p4.jpg",
+    "price": 141650,
+    "discount": 20,
+    "rating": 4.4,
+    "reviewsCount": 243,
+    "stock": 8,
+    "description": "The Dawg Y 990 ARGB case offers exceptional airflow and stunning RGB lighting with pre-installed fans.",
+    "specifications": {
+      "FormFactor": "E-ATX",
+      "FansIncluded": "4 x ARGB",
+      "SidePanel": "Tempered Glass",
+      "FrontPanel": "Mesh",
+      "ExpansionSlots": "7+2"
+    }
+  },
+  {
+    "id": 5,
+    "slug": "processor",
+    "name": "CyberPower UT2200E 2200VA UPS",
+    "image": "/p5.jpg",
+    "price": 49990,
+    "discount": 18,
+    "rating": 4.1,
+    "reviewsCount": 318,
+    "stock": 4,
+    "description": "CyberPower UT2200E provides reliable power backup and surge protection for your critical devices.",
+    "specifications": {
+      "Capacity": "2200VA / 1320W",
+      "Outlets": "6",
+      "Type": "Line-Interactive",
+      "Runtime": "10-30 mins",
+      "BatteryReplaceable": "Yes"
+    }
+  },
+  {
+    "id": 6,
+    "slug": "processor",
+    "name": "ZOTAC RTX 5060 Solo 8GB GDDR7 Graphics Card",
+    "image": "/p6.jpg",
+    "price": 38999,
+    "discount": 30,
+    "rating": 4.3,
+    "reviewsCount": 785,
+    "stock": 7,
+    "description": "ZOTAC RTX 5060 Solo delivers power-packed performance in a single-fan compact design.",
+    "specifications": {
+      "Memory": "8GB GDDR7",
+      "CoreClock": "2540MHz",
+      "Cooling": "Single Fan",
+      "Ports": "3x DisplayPort, 1x HDMI",
+      "PowerConnectors": "1 x 8-pin"
+    }
+  },
+  {
+    "id": 7,
+    "slug": "processor",
+    "name": "MSI RTX 5060 Inspire 2X OC 8GB GDDR7 Graphics Card",
+    "image": "/p7.jpg",
+    "price": 41650,
+    "discount": 19,
+    "rating": 4.5,
+    "reviewsCount": 902,
+    "stock": 15,
+    "description": "MSI Inspire 2X OC brings silent performance and efficient cooling with dual TORX fans.",
+    "specifications": {
+      "Memory": "8GB GDDR7",
+      "BoostClock": "2610MHz",
+      "Cooling": "Dual TORX 4.0 Fans",
+      "RGB": "Yes",
+      "Software": "MSI Afterburner"
+    }
+  },
+  {
+    "id": 8,
+    "slug": "processor",
+    "name": "ASUS Dual RTX 5060 OC 8GB GDDR7 Graphics Card",
+    "image": "/p3.jpg",
+    "price": 9540,
+    "discount": 9,
+    "rating": 4.7,
+    "reviewsCount": 640,
+    "stock": 6,
+    "description": "ASUS Dual RTX 5060 OC is a powerful mid-range GPU ideal for 1440p gaming and creative workloads.",
+    "specifications": {
+      "Memory": "8GB GDDR7",
+      "Architecture": "Ada Lovelace",
+      "Cooling": "Dual Fan",
+      "Ports": "3x DisplayPort, 1x HDMI",
+      "VRReady": "Yes"
+    }
+  },
+  {
+    "id": 9,
+    "slug": "processor",
+    "name": "Dawg Y 990 ARGB E-ATX Mid Tower Case with Pre-installed",
+    "image": "/p4.jpg",
+    "price": 19790,
+    "discount": 17,
+    "rating": 4.2,
+    "reviewsCount": 178,
+    "stock": 11,
+    "description": "Sleek and spacious, the Dawg Y 990 is a perfect case for enthusiast builds with clean cable management.",
+    "specifications": {
+      "FormFactor": "E-ATX",
+      "ARGB": "Yes",
+      "FansIncluded": "3 Front, 1 Rear",
+      "USBPorts": "2 x USB 3.0, 1 x Type-C",
+      "PSUShroud": "Yes"
+    }
+  },
+  {
+    "id": 10,
+    "slug": "processor",
+    "name": "ZOTAC RTX 5060 Solo 8GB GDDR7 Graphics Card",
+    "image": "/p6.jpg",
+    "price": 38999,
+    "discount": 30,
+    "rating": 4.4,
+    "reviewsCount": 722,
+    "stock": 13,
+    "description": "Compact and efficient, the ZOTAC Solo edition provides next-gen graphics performance with minimal noise.",
+    "specifications": {
+      "Memory": "8GB GDDR7",
+      "Ports": "3 x DP 1.4a, 1 x HDMI 2.1",
+      "Cooling": "Single Fan",
+      "Length": "220mm",
+      "TDP": "165W"
+    }
+  },
+  {
+    "id": 11,
+    "slug": "processor",
+    "name": "MSI RTX 5060 Inspire 2X OC 8GB GDDR7 Graphics Card",
+    "image": "/p7.jpg",
+    "price": 41650,
+    "discount": 19,
+    "rating": 4.6,
+    "reviewsCount": 832,
+    "stock": 9,
+    "description": "MSI Inspire 2X features a durable backplate, optimized thermal design, and factory overclocked speeds.",
+    "specifications": {
+      "Memory": "8GB GDDR7",
+      "Cooling": "Dual Fan",
+      "BoostClock": "2595MHz",
+      "RGB": "Mystic Light",
+      "BuildQuality": "Metal Backplate"
+    }
+  },
+  {
+    "id": 12,
+    "slug": "processor",
+    "name": "ASUS Dual RTX 5060 OC 8GB GDDR7 Graphics Card",
+    "image": "/p3.jpg",
+    "price": 9540,
+    "discount": 9,
+    "rating": 4.6,
+    "reviewsCount": 410,
+    "stock": 14,
+    "description": "Efficient cooling and high clock speeds make the ASUS Dual RTX 5060 an excellent choice for gamers.",
+    "specifications": {
+      "Memory": "8GB GDDR7",
+      "Clock": "2595MHz",
+      "Cooling": "Dual Fan",
+      "RayTracing": "Yes",
+      "Software": "GPU Tweak III"
+    }
+  },
+  {
+    "id": 13,
+    "slug": "processor",
+    "name": "Dawg Y 990 ARGB E-ATX Mid Tower Case with Pre-installed",
+    "image": "/p4.jpg",
+    "price": 19790,
+    "discount": 17,
+    "rating": 4.3,
+    "reviewsCount": 267,
+    "stock": 20,
+    "description": "ARGB lighting, tool-less design, and massive internal space make the Dawg Y 990 an enthusiast favorite.",
+    "specifications": {
+      "FormFactor": "Mid Tower",
+      "RGBSupport": "Yes",
+      "Fans": "4 x ARGB",
+      "MaxGPUSize": "400mm",
+      "Material": "SPCC Steel + Tempered Glass"
+    }
+  }
+]

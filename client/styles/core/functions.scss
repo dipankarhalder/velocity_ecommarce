@@ -1,0 +1,15 @@
+@use "sass:math";
+
+$base-font-size: 16; // root font size
+
+@function rem($value, $base: $base-font-size) {
+  @if math.unit($value) == "rem" {
+    @return $value; // already rem
+  } @else if math.unit($value) == "px" {
+    @return math.div($value, $base) * 1rem; // px → rem
+  } @else if math.is-unitless($value) {
+    @return math.div($value, $base) * 1rem; // unitless → rem
+  } @else {
+    @error "Unsupported unit: #{math.unit($value)}. Please use px, rem, or unitless.";
+  }
+}

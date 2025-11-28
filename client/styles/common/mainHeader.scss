@@ -1,0 +1,182 @@
+// ================================
+// Variables
+// ================================
+$header-padding: 16px 0;
+$icon-size: 24px;
+$search-icon-size: 20px;
+$search-input-width: 440px;
+$search-input-height: 40px;
+$btn-height: 42px;
+$btn-padding: 0 30px;
+$font-size-small: 12px;
+$font-size-base: 14px;
+$font-size-medium: 15px;
+$gradient-white: linear-gradient(0deg, #ffffff 0%, #f4f4f4 100%);
+$transparent: transparent;
+
+// ================================
+// Mixins
+// ================================
+@mixin flex-center($gap: 0) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin icon-size($size) {
+  width: $size;
+  height: $size;
+
+  > svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// ==========================
+// Main Header Styles
+// ==========================
+.app_main_header {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  padding: $header-padding;
+  position: sticky;
+  top: 0px;
+  z-index: 6;
+  background: $white;
+
+  .app_inside_main_header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .app_main_header_left {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      gap: 50px;
+
+      .app_logo {
+        width: 170px;
+
+        > svg {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .app_top_search {
+        display: flex;
+        align-items: center;
+
+        .app_main_search_input {
+          @include flex-center(16px);
+          padding: 0 16px;
+          border: 1px solid $border;
+          border-radius: 8px;
+          overflow: hidden;
+
+          > span {
+            @include icon-size($search-icon-size);
+
+            > svg {
+              color: $searchic;
+            }
+          }
+
+          input[type="text"] {
+            width: $search-input-width;
+            height: $search-input-height;
+            border: none;
+            font-size: $font-size-base;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .app_main_header_right {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      gap: 36px;
+
+      .app_build_pc_btn {
+        button,
+        a {
+          height: $btn-height;
+          padding: $btn-padding;
+          font-size: $font-size-medium;
+          font-weight: 700;
+          color: $white;
+          background: $btn;
+          border: none;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .app_main_header_spcl_btns {
+        > ul {
+          display: grid;
+          grid-auto-flow: column;
+          align-items: center;
+          gap: 28px;
+
+          > li {
+            display: flex;
+
+            &.app_login_btn {
+              margin-right: 8px;
+
+              button {
+                @include flex-center(10px);
+                background: $transparent;
+                border: none;
+                cursor: pointer;
+
+                > span {
+                  @include icon-size($icon-size);
+                }
+
+                .app_main_header_login_text {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+
+                  > p {
+                    font-size: $font-size-small;
+                    line-height: 1.2;
+                  }
+
+                  > em {
+                    font-size: $font-size-base;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    font-style: normal;
+                  }
+                }
+              }
+            }
+
+            > a {
+              @include flex-center();
+
+              > span {
+                @include icon-size($icon-size);
+
+                > svg {
+                  color: $black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
