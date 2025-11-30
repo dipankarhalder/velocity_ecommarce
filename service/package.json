@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "A ecommerce application services",
   "main": "index.js",
+  "author": "dipankarhalder",
+  "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.js",
     "prod": "node --watch src/index.js",
@@ -11,15 +13,15 @@
     "format": "prettier --write ."
   },
   "keywords": [
-    "Node.js",
-    "Express.js",
-    "JavaScript"
+    "node",
+    "express",
+    "mongoose",
+    "jsonwebtoken",
+    "winston"
   ],
-  "author": "",
-  "license": "MIT",
-  "packageManager": "pnpm@10.16.1",
+  "type": "module",
   "dependencies": {
-    "bcryptjs": "^3.0.2",
+    "bcrypt": "^6.0.0",
     "compression": "^1.8.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
@@ -34,7 +36,6 @@
     "multer": "^2.0.2",
     "slugify": "^1.6.6",
     "ua-parser-js": "^2.0.6",
-    "uuid": "^13.0.0",
     "winston": "^3.18.3"
   },
   "devDependencies": {
