@@ -86,11 +86,4 @@ export const updateAccountValidation = Joi.object({
       "string.max":
         "Last name cannot exceed 50 characters.",
     }),
-  phone: Joi.string()
-    .pattern(/^[0-9]{10,15}$/)
-    .optional()
-    .messages({
-      "string.pattern.base":
-        "Phone must contain only digits (10-15).",
-    }),
 });
