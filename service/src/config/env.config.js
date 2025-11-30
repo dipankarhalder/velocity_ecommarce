@@ -3,13 +3,13 @@ dotenv.config({ quiet: true });
 
 const env = {
   PORT: process.env.PORT,
-  MONGOURI: process.env.MONGOURI,
+  MONGO_URI: process.env.MONGO_URI,
   PLATFORM: process.env.PLATFORM,
-  JWTSECRET: process.env.JWTSECRET,
-  JWTRSECRET: process.env.JWTRSECRET,
-  ACCESSTOKENEXPIRY: process.env.ACCESSTOKENEXPIRY,
-  REFRESHTOKENEXPIRY: process.env.REFRESHTOKENEXPIRY,
-  NODEENV: process.env.NODEENV,
+  JWT_ACCESS_SECRET: process.env.JWT_ACCESS_SECRET,
+  JWT_REFRESH_SECRET: process.env.JWT_REFRESH_SECRET,
+  ACCESS_TOKEN_EXPIRY: process.env.ACCESS_TOKEN_EXPIRY,
+  REFRESH_TOKEN_EXPIRY: process.env.REFRESH_TOKEN_EXPIRY,
+  NODE_ENV: process.env.NODE_ENV,
 };
 
 module.exports = env;

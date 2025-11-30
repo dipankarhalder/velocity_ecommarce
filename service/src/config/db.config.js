@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 /** Custom modules */
 const logger = require('../utils/logger.utils');
-const { MONGOURI } = require('./env.config');
+const { MONGO_URI } = require('./env.config');
 
 /** Client options object */
 const clientOptions = {
@@ -19,17 +19,17 @@ const clientOptions = {
 /**
  * Establishes a connection to the MongoDB database using Mongoose.
  * If an error occurs during the connection process, it throws an error with a descriptive message.
- * - Uses 'MONGOURI' as the connection string,
+ * - Uses 'MONGO_URI' as the connection string,
  * - 'clientOptions' contains additional configuration for MOngoose,
  * - Errors are properly handled and rethrown for better debugging,
  */
 const connectToDatabase = async () => {
-  if (!MONGOURI) {
+  if (!MONGO_URI) {
     throw new Error('MongoDB URI is not defined in the configuration.');
   }
 
   try {
-    await mongoose.connect(MONGOURI, clientOptions);
+    await mongoose.connect(MONGO_URI, clientOptions);
     logger.info('Connected to the database successfully.');
   } catch (err) {
     if (err instanceof Error) {

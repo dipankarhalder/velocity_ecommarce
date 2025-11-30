@@ -1,5 +1,5 @@
 /** Custom modules */
-const { config } = require('../../config/env.config.js');
+const env = require('../../config/env.config');
 const { logger } = require('../../utils/logger.utils.js');
 const { genUsername, genDeviceInfo } = require('../../utils/user.utils.js');
 const { generateAccessToken, generateRefreshToken } = require('../../utils/token.utils.js');
@@ -12,7 +12,6 @@ const Device = require('../../models/device.model.js');
 const register = async (req, res) => {
   try {
     const { firstName, lastName, email, password } = req.body;
-    console.log(firstName, lastName, email, password);
 
     /** Check for existing email */
     const existEmail = await User.exists({ email });
@@ -33,13 +32,9 @@ const register = async (req, res) => {
       password,
     });
 
-    console.log(username, newUser);
-
     /** Generate access and refresh token for new user */
     const accessToken = generateAccessToken(newUser._id, newUser.username);
     const refreshToken = generateRefreshToken(newUser._id, newUser.username);
-    console.log('accessToken, refreshToken');
-    console.log(accessToken, refreshToken);
 
     /** Store the refresh token in database */
     await Token.create({ token: refreshToken, userId: newUser._id });
@@ -53,12 +48,11 @@ const register = async (req, res) => {
     /** set refresh token in cookies */
     res.cookie('refreshToken', refreshToken, {
       httpOnly: true,
-      secure: config.NODE_ENV === 'production',
+      secure: env.NODE_ENV === 'production',
       sameSite: 'strict',
     });
 
     logger.info(`User registered successfully: ${newUser.email}`);
-    console.log('sdfkhjskdfjsdhf');
     res.status(201).json({
       user: {
         username: newUser.username,
@@ -69,6 +63,8 @@ const register = async (req, res) => {
       message: 'User registered successfully.',
     });
   } catch (err) {
+    const errorMessage = err?.message || String(err);
+    console.log(errorMessage);
     logger.error(`Registration error: ${err.message}`);
 
     res.status(500).json({
