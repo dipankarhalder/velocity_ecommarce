@@ -12,6 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /** Custom modules */
+import router from "./routes/index.js";
 import {
   connectToDatabase,
   disconnectFromDatabase,
@@ -87,16 +88,10 @@ app.use(
     await connectToDatabase();
 
     /** Initialized root routes */
-    app.use("/api", (req, res) => {
-      res.status(201).json({
-        message: "User logged-in successfully.",
-      });
-    });
-
+    app.use("/api", router);
     app.use((req, res, next) =>
       missingRoutes(req, res, next),
     );
-
     app.use((error, req, res) => globalError(res, error));
 
     /** Run the server */
@@ -133,7 +128,7 @@ const handleServerShutdown = async () => {
  * Listens for termination signals ('SIGTERM' and 'SIGINT').
  * - 'SIGTERM' is typically sent when stopping a process (e.g., 'kill' command or container shutdown),
  * - 'SIGINT' is triggered when the user interrupts the process (e.g., pressing 'Ctrl + C'),
- * - When either signal is reveived, 'handleServerShutdown' is eecuted to ensure proper cleanup.
+ * - When either signal is reveived, 'handleServerShutdown' is excuted to ensure proper cleanup.
  */
 process.on("SIGTERM", handleServerShutdown);
 process.on("SIGINT", handleServerShutdown);
