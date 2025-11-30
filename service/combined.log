@@ -72,3 +72,349 @@
 2025-11-30 05:10:27 [info] info: Connected to the database successfully.
 2025-11-30 05:10:27 [info] info: Server running: 4040.
 2025-11-30 05:14:40 [info] info: Disconnected from the database successfully.
+2025-11-30 13:40:12 [info] info: Connected to the database successfully.
+2025-11-30 13:40:12 [info] info: Server running: 4040.
+2025-11-30 13:45:35 [info] info: Connected to the database successfully.
+2025-11-30 13:45:35 [info] info: Server running: 4040.
+2025-11-30 13:45:35 [info] info: Connected to the database successfully.
+2025-11-30 13:45:35 [info] info: Server running: 4040.
+2025-11-30 13:45:36 [info] info: Connected to the database successfully.
+2025-11-30 13:45:36 [info] info: Server running: 4040.
+2025-11-30 13:45:36 [info] info: Connected to the database successfully.
+2025-11-30 13:45:36 [info] info: Server running: 4040.
+2025-11-30 13:45:37 [info] info: Connected to the database successfully.
+2025-11-30 13:45:37 [info] info: Server running: 4040.
+2025-11-30 13:55:32 [info] error: Failed to start the server. MongoDB URI is not defined in the configuration.
+2025-11-30 13:55:32 [info] error: Failed to start the server. MongoDB URI is not defined in the configuration.
+2025-11-30 13:55:38 [info] error: Failed to start the server. MongoDB URI is not defined in the configuration.
+2025-11-30 13:55:44 [info] error: Failed to start the server. MongoDB URI is not defined in the configuration.
+2025-11-30 13:55:44 [info] error: Failed to start the server. MongoDB URI is not defined in the configuration.
+2025-11-30 13:55:45 [info] error: Failed to start the server. MongoDB URI is not defined in the configuration.
+2025-11-30 13:55:45 [info] error: Failed to start the server. MongoDB URI is not defined in the configuration.
+2025-11-30 13:55:57 [info] error: Failed to start the server. MongoDB URI is not defined in the configuration.
+2025-11-30 13:56:01 [info] error: Failed to start the server. MongoDB URI is not defined in the configuration.
+2025-11-30 13:56:02 [info] error: Failed to start the server. MongoDB URI is not defined in the configuration.
+2025-11-30 13:56:08 [info] error: Failed to start the server. MongoDB URI is not defined in the configuration.
+2025-11-30 13:56:49 [info] info: Connected to the database successfully.
+2025-11-30 13:56:49 [info] info: Server running: 4040.
+2025-11-30 13:56:50 [info] info: Connected to the database successfully.
+2025-11-30 13:56:50 [info] info: Server running: 4040.
+2025-11-30 13:56:51 [info] info: Connected to the database successfully.
+2025-11-30 13:56:51 [info] info: Server running: 4040.
+2025-11-30 13:56:52 [info] info: Connected to the database successfully.
+2025-11-30 13:56:52 [info] info: Server running: 4040.
+2025-11-30 13:56:52 [info] info: Connected to the database successfully.
+2025-11-30 13:56:52 [info] info: Server running: 4040.
+2025-11-30 13:57:10 [info] info: Connected to the database successfully.
+2025-11-30 13:57:10 [info] info: Server running: 4040.
+2025-11-30 13:57:10 [info] info: Connected to the database successfully.
+2025-11-30 13:57:10 [info] info: Server running: 4040.
+2025-11-30 13:57:11 [info] info: Connected to the database successfully.
+2025-11-30 13:57:11 [info] info: Server running: 4040.
+2025-11-30 13:57:12 [info] info: Connected to the database successfully.
+2025-11-30 13:57:12 [info] info: Server running: 4040.
+2025-11-30 13:57:14 [info] info: Connected to the database successfully.
+2025-11-30 13:57:14 [info] info: Server running: 4040.
+2025-11-30 13:57:15 [info] info: Connected to the database successfully.
+2025-11-30 13:57:15 [info] info: Server running: 4040.
+2025-11-30 13:57:15 [info] info: Connected to the database successfully.
+2025-11-30 13:57:15 [info] info: Server running: 4040.
+2025-11-30 13:57:16 [info] info: Connected to the database successfully.
+2025-11-30 13:57:16 [info] info: Server running: 4040.
+2025-11-30 13:57:16 [info] info: Connected to the database successfully.
+2025-11-30 13:57:16 [info] info: Server running: 4040.
+2025-11-30 16:29:29 [info] info: Connected to the database successfully.
+2025-11-30 16:29:29 [info] info: Server running: 4040.
+2025-11-30 16:29:29 [info] info: Connected to the database successfully.
+2025-11-30 16:29:29 [info] info: Server running: 4040.
+2025-11-30 16:29:30 [info] info: Connected to the database successfully.
+2025-11-30 16:29:30 [info] info: Server running: 4040.
+2025-11-30 16:29:30 [info] info: Connected to the database successfully.
+2025-11-30 16:29:30 [info] info: Server running: 4040.
+2025-11-30 16:29:31 [info] info: Connected to the database successfully.
+2025-11-30 16:29:31 [info] info: Server running: 4040.
+2025-11-30 16:29:31 [info] info: Connected to the database successfully.
+2025-11-30 16:29:31 [info] info: Server running: 4040.
+2025-11-30 16:29:32 [info] info: Connected to the database successfully.
+2025-11-30 16:29:32 [info] info: Server running: 4040.
+2025-11-30 16:29:32 [info] info: Connected to the database successfully.
+2025-11-30 16:29:32 [info] info: Server running: 4040.
+2025-11-30 16:33:02 [info] info: Connected to the database successfully.
+2025-11-30 16:33:02 [info] info: Server running: 4040.
+2025-11-30 16:33:03 [info] info: Connected to the database successfully.
+2025-11-30 16:33:03 [info] info: Server running: 4040.
+2025-11-30 16:33:04 [info] info: Connected to the database successfully.
+2025-11-30 16:33:04 [info] info: Server running: 4040.
+2025-11-30 16:33:05 [info] info: Connected to the database successfully.
+2025-11-30 16:33:05 [info] info: Server running: 4040.
+2025-11-30 16:33:05 [info] info: Connected to the database successfully.
+2025-11-30 16:33:05 [info] info: Server running: 4040.
+2025-11-30 16:33:06 [info] info: Connected to the database successfully.
+2025-11-30 16:33:06 [info] info: Server running: 4040.
+2025-11-30 16:33:06 [info] info: Connected to the database successfully.
+2025-11-30 16:33:06 [info] info: Server running: 4040.
+2025-11-30 16:43:49 [info] info: Connected to the database successfully.
+2025-11-30 16:43:49 [info] info: Server running: 4040.
+2025-11-30 16:43:49 [info] info: Connected to the database successfully.
+2025-11-30 16:43:49 [info] info: Server running: 4040.
+2025-11-30 16:43:55 [info] info: Connected to the database successfully.
+2025-11-30 16:43:55 [info] info: Server running: 4040.
+2025-11-30 16:43:55 [info] info: Connected to the database successfully.
+2025-11-30 16:43:55 [info] info: Server running: 4040.
+2025-11-30 16:43:56 [info] info: Connected to the database successfully.
+2025-11-30 16:43:56 [info] info: Server running: 4040.
+2025-11-30 16:44:16 [info] info: Connected to the database successfully.
+2025-11-30 16:44:16 [info] info: Server running: 4040.
+2025-11-30 16:59:54 [info] info: Connected to the database successfully.
+2025-11-30 16:59:54 [info] info: Server running: 4040.
+2025-11-30 16:59:55 [info] info: Connected to the database successfully.
+2025-11-30 16:59:55 [info] info: Server running: 4040.
+2025-11-30 16:59:55 [info] info: Connected to the database successfully.
+2025-11-30 16:59:55 [info] info: Server running: 4040.
+2025-11-30 17:00:13 [info] info: Connected to the database successfully.
+2025-11-30 17:00:13 [info] info: Server running: 4040.
+2025-11-30 17:00:14 [info] info: Connected to the database successfully.
+2025-11-30 17:00:14 [info] info: Server running: 4040.
+2025-11-30 17:00:56 [info] info: Connected to the database successfully.
+2025-11-30 17:00:56 [info] info: Server running: 4040.
+2025-11-30 17:00:57 [info] info: Connected to the database successfully.
+2025-11-30 17:00:57 [info] info: Server running: 4040.
+2025-11-30 17:00:57 [info] info: Connected to the database successfully.
+2025-11-30 17:00:57 [info] info: Server running: 4040.
+2025-11-30 17:00:58 [info] info: Connected to the database successfully.
+2025-11-30 17:00:58 [info] info: Server running: 4040.
+2025-11-30 17:01:35 [info] info: Connected to the database successfully.
+2025-11-30 17:01:35 [info] info: Server running: 4040.
+2025-11-30 17:01:37 [info] info: Connected to the database successfully.
+2025-11-30 17:01:37 [info] info: Server running: 4040.
+2025-11-30 17:01:37 [info] info: Connected to the database successfully.
+2025-11-30 17:01:37 [info] info: Server running: 4040.
+2025-11-30 17:03:19 [info] info: Connected to the database successfully.
+2025-11-30 17:03:19 [info] info: Server running: 4040.
+2025-11-30 17:03:21 [info] info: Connected to the database successfully.
+2025-11-30 17:03:21 [info] info: Server running: 4040.
+2025-11-30 17:03:23 [info] info: Connected to the database successfully.
+2025-11-30 17:03:23 [info] info: Server running: 4040.
+2025-11-30 17:03:23 [info] info: Connected to the database successfully.
+2025-11-30 17:03:23 [info] info: Server running: 4040.
+2025-11-30 17:03:24 [info] info: Connected to the database successfully.
+2025-11-30 17:03:24 [info] info: Server running: 4040.
+2025-11-30 17:03:24 [info] info: Connected to the database successfully.
+2025-11-30 17:03:24 [info] info: Server running: 4040.
+2025-11-30 17:03:25 [info] info: Connected to the database successfully.
+2025-11-30 17:03:25 [info] info: Server running: 4040.
+2025-11-30 17:05:51 [info] info: Connected to the database successfully.
+2025-11-30 17:05:51 [info] info: Server running: 4040.
+2025-11-30 17:05:52 [info] info: Connected to the database successfully.
+2025-11-30 17:05:52 [info] info: Server running: 4040.
+2025-11-30 17:05:53 [info] info: Connected to the database successfully.
+2025-11-30 17:05:53 [info] info: Server running: 4040.
+2025-11-30 17:05:55 [info] info: Connected to the database successfully.
+2025-11-30 17:05:55 [info] info: Server running: 4040.
+2025-11-30 17:05:56 [info] info: Connected to the database successfully.
+2025-11-30 17:05:56 [info] info: Server running: 4040.
+2025-11-30 17:05:58 [info] info: Connected to the database successfully.
+2025-11-30 17:05:58 [info] info: Server running: 4040.
+2025-11-30 17:05:59 [info] info: Connected to the database successfully.
+2025-11-30 17:05:59 [info] info: Server running: 4040.
+2025-11-30 17:06:00 [info] info: Connected to the database successfully.
+2025-11-30 17:06:00 [info] info: Server running: 4040.
+2025-11-30 17:06:02 [info] info: Connected to the database successfully.
+2025-11-30 17:06:02 [info] info: Server running: 4040.
+2025-11-30 17:06:03 [info] info: Connected to the database successfully.
+2025-11-30 17:06:03 [info] info: Server running: 4040.
+2025-11-30 17:06:04 [info] info: Connected to the database successfully.
+2025-11-30 17:06:04 [info] info: Server running: 4040.
+2025-11-30 17:06:05 [info] info: Connected to the database successfully.
+2025-11-30 17:06:05 [info] info: Server running: 4040.
+2025-11-30 17:06:07 [info] info: Connected to the database successfully.
+2025-11-30 17:06:07 [info] info: Server running: 4040.
+2025-11-30 17:06:08 [info] info: Connected to the database successfully.
+2025-11-30 17:06:08 [info] info: Server running: 4040.
+2025-11-30 17:06:08 [info] info: Connected to the database successfully.
+2025-11-30 17:06:08 [info] info: Server running: 4040.
+2025-11-30 17:06:10 [info] info: Connected to the database successfully.
+2025-11-30 17:06:10 [info] info: Server running: 4040.
+2025-11-30 17:06:11 [info] info: Connected to the database successfully.
+2025-11-30 17:06:11 [info] info: Server running: 4040.
+2025-11-30 17:06:12 [info] info: Connected to the database successfully.
+2025-11-30 17:06:12 [info] info: Server running: 4040.
+2025-11-30 17:07:13 [info] info: Connected to the database successfully.
+2025-11-30 17:07:13 [info] info: Server running: 4040.
+2025-11-30 17:07:15 [info] info: Connected to the database successfully.
+2025-11-30 17:07:15 [info] info: Server running: 4040.
+2025-11-30 17:07:16 [info] info: Connected to the database successfully.
+2025-11-30 17:07:16 [info] info: Server running: 4040.
+2025-11-30 17:07:17 [info] info: Connected to the database successfully.
+2025-11-30 17:07:17 [info] info: Server running: 4040.
+2025-11-30 17:07:19 [info] info: Connected to the database successfully.
+2025-11-30 17:07:19 [info] info: Server running: 4040.
+2025-11-30 17:07:19 [info] info: Connected to the database successfully.
+2025-11-30 17:07:19 [info] info: Server running: 4040.
+2025-11-30 17:07:20 [info] info: Connected to the database successfully.
+2025-11-30 17:07:20 [info] info: Server running: 4040.
+2025-11-30 17:07:21 [info] info: Connected to the database successfully.
+2025-11-30 17:07:21 [info] info: Server running: 4040.
+2025-11-30 17:07:22 [info] info: Connected to the database successfully.
+2025-11-30 17:07:22 [info] info: Server running: 4040.
+2025-11-30 17:07:23 [info] info: Connected to the database successfully.
+2025-11-30 17:07:23 [info] info: Server running: 4040.
+2025-11-30 17:07:24 [info] info: Connected to the database successfully.
+2025-11-30 17:07:24 [info] info: Server running: 4040.
+2025-11-30 17:07:56 [info] info: Connected to the database successfully.
+2025-11-30 17:07:56 [info] info: Server running: 4040.
+2025-11-30 17:07:58 [info] info: Connected to the database successfully.
+2025-11-30 17:07:58 [info] info: Server running: 4040.
+2025-11-30 17:07:59 [info] info: Connected to the database successfully.
+2025-11-30 17:08:00 [info] info: Server running: 4040.
+2025-11-30 17:08:01 [info] info: Connected to the database successfully.
+2025-11-30 17:08:01 [info] info: Server running: 4040.
+2025-11-30 17:08:02 [info] info: Connected to the database successfully.
+2025-11-30 17:08:02 [info] info: Server running: 4040.
+2025-11-30 17:08:03 [info] info: Connected to the database successfully.
+2025-11-30 17:08:03 [info] info: Server running: 4040.
+2025-11-30 17:08:04 [info] info: Connected to the database successfully.
+2025-11-30 17:08:04 [info] info: Server running: 4040.
+2025-11-30 17:08:05 [info] info: Connected to the database successfully.
+2025-11-30 17:08:05 [info] info: Server running: 4040.
+2025-11-30 17:08:07 [info] info: Connected to the database successfully.
+2025-11-30 17:08:07 [info] info: Server running: 4040.
+2025-11-30 17:08:08 [info] info: Connected to the database successfully.
+2025-11-30 17:08:08 [info] info: Server running: 4040.
+2025-11-30 17:08:10 [info] info: Connected to the database successfully.
+2025-11-30 17:08:10 [info] info: Server running: 4040.
+2025-11-30 17:08:10 [info] info: Connected to the database successfully.
+2025-11-30 17:08:10 [info] info: Server running: 4040.
+2025-11-30 17:08:11 [info] info: Connected to the database successfully.
+2025-11-30 17:08:11 [info] info: Server running: 4040.
+2025-11-30 17:08:52 [info] info: Connected to the database successfully.
+2025-11-30 17:08:52 [info] info: Server running: 4040.
+2025-11-30 17:08:53 [info] info: Connected to the database successfully.
+2025-11-30 17:08:53 [info] info: Server running: 4040.
+2025-11-30 17:08:55 [info] info: Connected to the database successfully.
+2025-11-30 17:08:55 [info] info: Server running: 4040.
+2025-11-30 17:08:56 [info] info: Connected to the database successfully.
+2025-11-30 17:08:56 [info] info: Server running: 4040.
+2025-11-30 17:08:56 [info] info: Connected to the database successfully.
+2025-11-30 17:08:56 [info] info: Server running: 4040.
+2025-11-30 17:08:57 [info] info: Connected to the database successfully.
+2025-11-30 17:08:57 [info] info: Server running: 4040.
+2025-11-30 17:08:57 [info] info: Connected to the database successfully.
+2025-11-30 17:08:57 [info] info: Server running: 4040.
+2025-11-30 17:17:34 [info] info: Connected to the database successfully.
+2025-11-30 17:17:34 [info] info: Server running: 4040.
+2025-11-30 17:17:34 [info] info: Connected to the database successfully.
+2025-11-30 17:17:34 [info] info: Server running: 4040.
+2025-11-30 17:17:34 [info] info: Connected to the database successfully.
+2025-11-30 17:17:34 [info] info: Server running: 4040.
+2025-11-30 17:17:35 [info] info: Connected to the database successfully.
+2025-11-30 17:17:35 [info] info: Server running: 4040.
+2025-11-30 17:17:35 [info] info: Connected to the database successfully.
+2025-11-30 17:17:35 [info] info: Server running: 4040.
+2025-11-30 17:17:36 [info] info: Connected to the database successfully.
+2025-11-30 17:17:36 [info] info: Server running: 4040.
+2025-11-30 17:17:37 [info] info: Connected to the database successfully.
+2025-11-30 17:17:37 [info] info: Server running: 4040.
+2025-11-30 17:17:38 [info] info: Connected to the database successfully.
+2025-11-30 17:17:38 [info] info: Server running: 4040.
+2025-11-30 17:17:58 [info] info: Connected to the database successfully.
+2025-11-30 17:17:58 [info] info: Server running: 4040.
+2025-11-30 17:18:00 [info] info: Connected to the database successfully.
+2025-11-30 17:18:00 [info] info: Server running: 4040.
+2025-11-30 17:18:03 [info] info: Connected to the database successfully.
+2025-11-30 17:18:03 [info] info: Server running: 4040.
+2025-11-30 17:18:05 [info] info: Connected to the database successfully.
+2025-11-30 17:18:05 [info] info: Server running: 4040.
+2025-11-30 17:18:06 [info] info: Connected to the database successfully.
+2025-11-30 17:18:06 [info] info: Server running: 4040.
+2025-11-30 17:18:07 [info] info: Connected to the database successfully.
+2025-11-30 17:18:07 [info] info: Server running: 4040.
+2025-11-30 17:18:08 [info] info: Connected to the database successfully.
+2025-11-30 17:18:08 [info] info: Server running: 4040.
+2025-11-30 17:18:10 [info] info: Connected to the database successfully.
+2025-11-30 17:18:10 [info] info: Server running: 4040.
+2025-11-30 17:18:10 [info] info: Connected to the database successfully.
+2025-11-30 17:18:10 [info] info: Server running: 4040.
+2025-11-30 17:18:11 [info] info: Connected to the database successfully.
+2025-11-30 17:18:11 [info] info: Server running: 4040.
+2025-11-30 17:18:12 [info] info: Connected to the database successfully.
+2025-11-30 17:18:12 [info] info: Server running: 4040.
+2025-11-30 17:18:12 [info] info: Connected to the database successfully.
+2025-11-30 17:18:12 [info] info: Server running: 4040.
+2025-11-30 17:18:13 [info] info: Connected to the database successfully.
+2025-11-30 17:18:13 [info] info: Server running: 4040.
+2025-11-30 17:18:14 [info] info: Connected to the database successfully.
+2025-11-30 17:18:14 [info] info: Server running: 4040.
+2025-11-30 17:18:15 [info] info: Connected to the database successfully.
+2025-11-30 17:18:15 [info] info: Server running: 4040.
+2025-11-30 17:18:16 [info] info: Connected to the database successfully.
+2025-11-30 17:18:16 [info] info: Server running: 4040.
+2025-11-30 17:18:17 [info] info: Connected to the database successfully.
+2025-11-30 17:18:17 [info] info: Server running: 4040.
+2025-11-30 17:18:18 [info] info: Connected to the database successfully.
+2025-11-30 17:18:18 [info] info: Server running: 4040.
+2025-11-30 17:18:19 [info] info: Connected to the database successfully.
+2025-11-30 17:18:19 [info] info: Server running: 4040.
+2025-11-30 17:19:47 [info] info: Connected to the database successfully.
+2025-11-30 17:19:47 [info] info: Server running: 4040.
+2025-11-30 17:19:49 [info] info: Connected to the database successfully.
+2025-11-30 17:19:49 [info] info: Server running: 4040.
+2025-11-30 17:20:19 [info] info: Connected to the database successfully.
+2025-11-30 17:20:19 [info] info: Server running: 4040.
+2025-11-30 17:20:20 [info] info: Connected to the database successfully.
+2025-11-30 17:20:20 [info] info: Server running: 4040.
+2025-11-30 17:20:21 [info] info: Connected to the database successfully.
+2025-11-30 17:20:21 [info] info: Server running: 4040.
+2025-11-30 17:20:22 [info] info: Connected to the database successfully.
+2025-11-30 17:20:22 [info] info: Server running: 4040.
+2025-11-30 17:20:23 [info] info: Connected to the database successfully.
+2025-11-30 17:20:23 [info] info: Server running: 4040.
+2025-11-30 17:20:24 [info] info: Connected to the database successfully.
+2025-11-30 17:20:24 [info] info: Server running: 4040.
+2025-11-30 17:20:24 [info] info: Connected to the database successfully.
+2025-11-30 17:20:24 [info] info: Server running: 4040.
+2025-11-30 17:20:33 [info] info: Connected to the database successfully.
+2025-11-30 17:20:33 [info] info: Server running: 4040.
+2025-11-30 17:20:34 [info] info: Connected to the database successfully.
+2025-11-30 17:20:34 [info] info: Server running: 4040.
+2025-11-30 17:20:35 [info] info: Connected to the database successfully.
+2025-11-30 17:20:35 [info] info: Server running: 4040.
+2025-11-30 17:20:38 [info] info: Connected to the database successfully.
+2025-11-30 17:20:38 [info] info: Server running: 4040.
+2025-11-30 17:20:39 [info] info: Connected to the database successfully.
+2025-11-30 17:20:39 [info] info: Server running: 4040.
+2025-11-30 17:20:41 [info] info: Connected to the database successfully.
+2025-11-30 17:20:41 [info] info: Server running: 4040.
+2025-11-30 17:20:42 [info] info: Connected to the database successfully.
+2025-11-30 17:20:42 [info] info: Server running: 4040.
+2025-11-30 17:20:43 [info] info: Connected to the database successfully.
+2025-11-30 17:20:43 [info] info: Server running: 4040.
+2025-11-30 17:20:44 [info] info: Connected to the database successfully.
+2025-11-30 17:20:44 [info] info: Server running: 4040.
+2025-11-30 17:20:45 [info] info: Connected to the database successfully.
+2025-11-30 17:20:45 [info] info: Server running: 4040.
+2025-11-30 17:20:46 [info] info: Connected to the database successfully.
+2025-11-30 17:20:46 [info] info: Server running: 4040.
+2025-11-30 17:20:46 [info] info: Connected to the database successfully.
+2025-11-30 17:20:46 [info] info: Server running: 4040.
+2025-11-30 17:20:47 [info] info: Connected to the database successfully.
+2025-11-30 17:20:47 [info] info: Server running: 4040.
+2025-11-30 17:20:47 [info] info: Connected to the database successfully.
+2025-11-30 17:20:47 [info] info: Server running: 4040.
+2025-11-30 17:20:48 [info] info: Connected to the database successfully.
+2025-11-30 17:20:48 [info] info: Server running: 4040.
+2025-11-30 17:20:48 [info] info: Connected to the database successfully.
+2025-11-30 17:20:48 [info] info: Server running: 4040.
+2025-11-30 17:20:49 [info] info: Connected to the database successfully.
+2025-11-30 17:20:49 [info] info: Server running: 4040.
+2025-11-30 17:25:34 [info] info: Connected to the database successfully.
+2025-11-30 17:25:34 [info] info: Server running: 4040.
+2025-11-30 17:25:35 [info] info: Connected to the database successfully.
+2025-11-30 17:25:35 [info] info: Server running: 4040.
+2025-11-30 17:25:36 [info] info: Connected to the database successfully.
+2025-11-30 17:25:36 [info] info: Server running: 4040.
+2025-11-30 17:25:37 [info] info: Connected to the database successfully.
+2025-11-30 17:25:37 [info] info: Server running: 4040.
+2025-11-30 17:25:38 [info] info: Connected to the database successfully.
+2025-11-30 17:25:38 [info] info: Server running: 4040.
+2025-11-30 17:36:30 [info] info: Disconnected from the database successfully.

@@ -1,7 +1,9 @@
 const fs = require('fs');
 const { StatusCodes } = require('http-status-codes');
+const logger = require('./logger.utils');
 
 const globalError = (res, error) => {
+  logger.error(`Server error: ${error.message}.`);
   res.status(error.status || StatusCodes.INTERNAL_SERVER_ERROR);
   res.json({
     error: { message: error.message },
@@ -11,10 +13,12 @@ const globalError = (res, error) => {
 const missingRoutes = (req, res, next) => {
   const error = new Error('The API url not found.');
   error.status = StatusCodes.NOT_FOUND;
+  logger.error(`The API url not found.`);
   next(error);
 };
 
 const sendErrorResponse = (res, error) => {
+  logger.error('Something went wrong, please try again later.');
   return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
     status: StatusCodes.INTERNAL_SERVER_ERROR,
     message: 'Something went wrong, please try again later.',
@@ -41,7 +45,7 @@ const deleteUploadedFile = (file) => {
     try {
       fs.unlinkSync(file.path);
     } catch (err) {
-      console.error('Failed to delete uploaded file:', err.message);
+      logger.error(`Failed to delete uploaded file: ${err.message}`);
     }
   }
 };

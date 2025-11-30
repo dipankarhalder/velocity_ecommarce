@@ -1,5 +1,6 @@
 const { UAParser } = require('ua-parser-js');
 const { notFoundItem } = require('./core.utils');
+const logger = require('./logger.utils');
 const User = require('../models/user.model');
 
 /** Generate random username */
@@ -34,6 +35,7 @@ const getUserOrRespondNotFound = async (id, res) => {
   const user = await User.findById(id).select('-password');
   if (!user) {
     notFoundItem(res, 'The user is not found.');
+    logger.error('The user is not found.');
     return null;
   }
   return user;
