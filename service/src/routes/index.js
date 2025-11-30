@@ -4,7 +4,8 @@ const router = express.Router();
 const { userRole } = require('../constant');
 const { userLoginSchema, userInfoSchema, passwordSchema } = require('../validation/auth.validate');
 
-const { userSignup, userSignin, userSignout, refreshToken } = require('../controllers/auth.controller');
+const register = require('../controllers/auth/register');
+const { userSignin, userSignout, refreshToken } = require('../controllers/auth.controller');
 const { userProfile, userProfiles, userImageUpdate, userUpdateStatus, userUpdatePassword } = require('../controllers/profile.controller');
 
 const verifyToken = require('../middleware/auth.middleware');
@@ -15,7 +16,7 @@ const { SUPER, ADMIN, STAFF } = userRole;
 
 /* Authentication */
 router.post('/auth/signin', fieldValid(userLoginSchema), userSignin);
-router.post('/auth/signup', uploadMedia.single('profileImage'), fieldValid(userInfoSchema), userSignup);
+router.post('/auth/signup', uploadMedia.single('profileImage'), fieldValid(userInfoSchema), register);
 router.post('/auth/signout', userSignout);
 router.post('/auth/refresh-token', refreshToken);
 

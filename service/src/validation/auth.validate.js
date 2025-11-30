@@ -1,6 +1,5 @@
 const Joi = require('joi');
-const { userRole } = require('../constant');
-const { email, password, phone, requiredString } = require('../utils/validate.utils');
+const { email, password, requiredString } = require('../utils/validate.utils');
 
 const userLoginSchema = Joi.object({ email, password });
 const userInfoSchema = Joi.object({
@@ -8,10 +7,6 @@ const userInfoSchema = Joi.object({
   lastName: requiredString('Last Name should not be blank.'),
   email,
   password,
-  phone,
-  role: Joi.string().valid(userRole.SUPER, userRole.ADMIN, userRole.STAFF).required().messages({
-    'any.only': 'Role should be select a option.',
-  }),
 });
 
 const passwordSchema = Joi.object({
