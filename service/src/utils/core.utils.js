@@ -22,3 +22,31 @@ export const globalError = (res, error) => {
     error: { message: error.message },
   });
 };
+
+export const sendErrorResponse = (res, error) => {
+  logger.error(
+    "Something went wrong, please try again later.",
+  );
+  return res
+    .status(StatusCodes.INTERNAL_SERVER_ERROR)
+    .json({
+      status: StatusCodes.INTERNAL_SERVER_ERROR,
+      message:
+        "Something went wrong, please try again later.",
+      error: error.message,
+    });
+};
+
+export const validateFields = (res, messages) => {
+  return res.status(StatusCodes.BAD_REQUEST).json({
+    status: StatusCodes.BAD_REQUEST,
+    message: messages,
+  });
+};
+
+export const notFoundItem = (res, messages) => {
+  return res.status(StatusCodes.NOT_FOUND).json({
+    status: StatusCodes.NOT_FOUND,
+    message: messages,
+  });
+};
