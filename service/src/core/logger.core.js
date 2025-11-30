@@ -9,8 +9,8 @@ const { combine, timestamp, label, printf } = format;
 
 /** Logger format */
 const logFormat = printf(
-  ({ level, message, label, timestamp }) => {
-    return `${timestamp} [${label}] ${level}: ${message}`;
+  ({ message, label, timestamp }) => {
+    return `${timestamp} [${label}]: ${message}`;
   },
 );
 
@@ -23,6 +23,6 @@ export const logger = createLogger({
   ),
   transports: [
     new transports.Console(),
-    new transports.File({ filename: "combined.log" }),
+    // new transports.File({ filename: "combined.log" }),
   ],
 });
