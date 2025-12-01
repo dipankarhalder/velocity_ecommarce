@@ -8,7 +8,6 @@ export const ratelimiter = rateLimit({
   standardHeaders: "draft-8",
   legacyHeaders: false,
   message: {
-    error:
-      "You have sent too many requests in a given amount of time. Please try again later.",
+    error: "You have sent too many requests in a given amount of time. Please try again later.",
   },
 });

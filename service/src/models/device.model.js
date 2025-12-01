@@ -14,12 +14,7 @@ const deviceSchema = new Schema(
     deviceType: { type: String, require: true },
     os: { type: String, require: true },
     osVersion: { type: String, require: true },
-    logType: {
-      type: String,
-      require: true,
-      enum: userAuthRole,
-      default: "login",
-    },
+    logType: { type: String, require: true, enum: userAuthRole, default: "login" },
     userId: { type: Schema.Types.ObjectId, require: true },
   },
   { timestamps: true },

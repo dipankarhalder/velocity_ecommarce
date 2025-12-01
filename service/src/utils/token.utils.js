@@ -6,25 +6,17 @@ import { envConfig } from "../config/dotenv.config.js";
 
 /** Generate the tokens */
 export const generateAccessToken = (userId, username) => {
-  return jwt.sign(
-    { userId, username },
-    envConfig.JWT_ACCESS_SECRET,
-    {
-      expiresIn: envConfig.ACCESS_TOKEN_EXPIRY,
-      subject: "accessApi",
-    },
-  );
+  return jwt.sign({ userId, username }, envConfig.JWT_ACCESS_SECRET, {
+    expiresIn: envConfig.ACCESS_TOKEN_EXPIRY,
+    subject: "accessApi",
+  });
 };
 
 export const generateRefreshToken = (userId, username) => {
-  return jwt.sign(
-    { userId, username },
-    envConfig.JWT_REFRESH_SECRET,
-    {
-      expiresIn: envConfig.REFRESH_TOKEN_EXPIRY,
-      subject: "refreshToken",
-    },
-  );
+  return jwt.sign({ userId, username }, envConfig.JWT_REFRESH_SECRET, {
+    expiresIn: envConfig.REFRESH_TOKEN_EXPIRY,
+    subject: "refreshToken",
+  });
 };
 
 /** Verify the tokens */

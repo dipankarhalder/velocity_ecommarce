@@ -9,12 +9,7 @@ const uploadedFileSchema = new Schema(
     uploadedAt: { type: Date, default: Date.now },
     used: { type: Boolean, default: false },
   },
-  {
-    timestamps: true,
-  },
+  { timestamps: true },
 );
 
-export const UploadedFile = model(
-  "UploadedFile",
-  uploadedFileSchema,
-);
+export const UploadedFile = model("UploadedFile", uploadedFileSchema);

@@ -10,9 +10,7 @@ export const logout = async (req, res) => {
     const refreshToken = req.cookies.refreshToken;
     if (refreshToken) {
       await Token.deleteOne({ token: refreshToken });
-      logger.info(
-        "User refresh token deleted successfully.",
-      );
+      logger.info("User refresh token deleted successfully.");
     }
 
     res.clearCookie("refreshToken", {
@@ -29,8 +27,7 @@ export const logout = async (req, res) => {
     logger.error(`Logout failed: ${err.message}`);
 
     res.status(500).json({
-      message:
-        "Oops! Something went wrong. Please try again.",
+      message: "Oops! Something went wrong. Please try again.",
       error: err.message,
     });
   }

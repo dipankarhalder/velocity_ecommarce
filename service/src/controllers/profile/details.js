@@ -10,18 +10,13 @@ export const details = async (req, res) => {
     const userId = req.userId;
     if (!userId) {
       res.status(401).json({
-        message:
-          "Unauthorized: User ID missing from request.",
+        message: "Unauthorized: User ID missing from request.",
       });
       return;
     }
 
     /** find user from db */
-    const user = await User.findById(userId)
-      .select(
-        "username firstName lastName email profileImage",
-      )
-      .lean();
+    const user = await User.findById(userId).select("username firstName lastName email profileImage").lean();
 
     if (!user) {
       res.status(404).json({
@@ -39,8 +34,7 @@ export const details = async (req, res) => {
     logger.error(`Loading profile failed: ${err.message}`);
 
     res.status(500).json({
-      message:
-        "Oops! Something went wrong. Please try again.",
+      message: "Oops! Something went wrong. Please try again.",
       error: err.message,
     });
   }

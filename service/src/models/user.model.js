@@ -8,23 +8,11 @@ const UserSchema = new Schema(
     username: { type: String, require: true, unique: true },
     firstName: { type: String, required: true, trim: true },
     lastName: { type: String, required: true, trim: true },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-      trim: true,
-    },
-    password: {
-      type: String,
-      required: true,
-      minlength: 8,
-      select: false,
-    },
+    email: { type: String, required: true, unique: true, trim: true },
+    password: { type: String, required: true, minlength: 8, select: false },
     profileImage: { type: String, default: "" },
   },
-  {
-    timestamps: true,
-  },
+  { timestamps: true },
 );
 
 /** hasing the password */

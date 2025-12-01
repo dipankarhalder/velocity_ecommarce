@@ -1,6 +1,5 @@
 /** Capitalize first letter helper */
-const capitalize = (str) =>
-  str.charAt(0).toUpperCase() + str.slice(1);
+const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
 /** Validation middleware */
 export const validate = (schema) => (req, res, next) => {
@@ -15,18 +14,12 @@ export const validate = (schema) => (req, res, next) => {
       let message = detail.message.replace(/["]+/g, "");
 
       /** Safely extract and normalize field name */
-      const rawField =
-        detail.context?.label ??
-        detail.path?.[0] ??
-        "Field";
+      const rawField = detail.context?.label ?? detail.path?.[0] ?? "Field";
       const fieldName = String(rawField);
 
       /** Capitalize field name */
       const regex = new RegExp(`^${fieldName}`, "i");
-      message = message.replace(
-        regex,
-        capitalize(fieldName),
-      );
+      message = message.replace(regex, capitalize(fieldName));
       return message;
     });
 

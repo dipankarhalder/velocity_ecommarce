@@ -16,8 +16,7 @@ export const authenticate = (req, res, next) => {
   /** If there's no Bearer token, respond with 401 unauthorized */
   if (!authHeader?.startsWith("Bearer ")) {
     res.status(401).json({
-      message:
-        "Access denied. Please provide a valid token to continue.",
+      message: "Access denied. Please provide a valid token to continue.",
     });
     return;
   }
@@ -37,24 +36,21 @@ export const authenticate = (req, res, next) => {
   } catch (error) {
     if (error.name === "TokenExpiredError") {
       res.status(401).json({
-        message:
-          "Your session has expired. Please sign in again to continue.",
+        message: "Your session has expired. Please sign in again to continue.",
       });
       return;
     }
 
     if (error.name === "JsonWebTokenError") {
       res.status(401).json({
-        message:
-          "The provided token is invalid or has expired.",
+        message: "The provided token is invalid or has expired.",
       });
       return;
     }
 
     logger.error("Failed to authenticate user.");
     res.status(500).json({
-      message:
-        "Oops! Something went wrong. Please try again.",
+      message: "Oops! Something went wrong. Please try again.",
       error: error.message,
     });
   }
