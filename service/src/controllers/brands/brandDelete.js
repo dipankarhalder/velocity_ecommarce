@@ -23,8 +23,7 @@ export const deleteBrand = async (req, res) => {
     logger.error(`Delete Brand Error: ${err.message}`);
 
     res.status(500).json({
-      message:
-        "Oops! Something went wrong. Please try again.",
+      message: "Oops! Something went wrong. Please try again.",
       error: err.message,
     });
   }

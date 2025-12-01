@@ -1,14 +1,8 @@
 /** Custom modules */
 import { envConfig } from "../../config/dotenv.config.js";
 import { logger } from "../../core/logger.core.js";
-import {
-  genUsername,
-  genDeviceInfo,
-} from "../../utils/user.utils.js";
-import {
-  generateAccessToken,
-  generateRefreshToken,
-} from "../../utils/token.utils.js";
+import { genUsername, genDeviceInfo } from "../../utils/user.utils.js";
+import { generateAccessToken, generateRefreshToken } from "../../utils/token.utils.js";
 
 /** Models */
 import { User } from "../../models/user.model.js";
@@ -17,8 +11,7 @@ import { Device } from "../../models/device.model.js";
 
 export const register = async (req, res) => {
   try {
-    const { firstName, lastName, email, password } =
-      req.body;
+    const { firstName, lastName, email, password } = req.body;
 
     /** Check for existing email */
     const existEmail = await User.exists({ email });
@@ -40,14 +33,8 @@ export const register = async (req, res) => {
     });
 
     /** Generate access and refresh token for new user */
-    const accessToken = generateAccessToken(
-      newUser._id,
-      newUser.username,
-    );
-    const refreshToken = generateRefreshToken(
-      newUser._id,
-      newUser.username,
-    );
+    const accessToken = generateAccessToken(newUser._id, newUser.username);
+    const refreshToken = generateRefreshToken(newUser._id, newUser.username);
 
     /** Store the refresh token in database */
     await Token.create({
@@ -71,9 +58,7 @@ export const register = async (req, res) => {
       sameSite: "strict",
     });
 
-    logger.info(
-      `User registered successfully: ${newUser.email}`,
-    );
+    logger.info(`User registered successfully: ${newUser.email}`);
     res.status(201).json({
       user: {
         username: newUser.username,
@@ -88,8 +73,7 @@ export const register = async (req, res) => {
     logger.error(`Registration error: ${errorMessage}`);
 
     res.status(500).json({
-      message:
-        "Oops! Something went wrong. Please try again.",
+      message: "Oops! Something went wrong. Please try again.",
       error: errorMessage,
     });
   }
