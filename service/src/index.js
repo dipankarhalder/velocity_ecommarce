@@ -13,17 +13,11 @@ const __dirname = path.dirname(__filename);
 
 /** Custom modules */
 import router from "./routes/index.js";
-import {
-  connectToDatabase,
-  disconnectFromDatabase,
-} from "./config/db.config.js";
+import { connectToDatabase, disconnectFromDatabase } from "./config/db.config.js";
 import { envConfig } from "./config/dotenv.config.js";
 import { logger } from "./core/logger.core.js";
 import { ratelimiter } from "./core/ratelimiter.core.js";
-import {
-  missingRoutes,
-  globalError,
-} from "./utils/core.utils.js";
+import { missingRoutes, globalError } from "./utils/core.utils.js";
 
 /** Config CORS options */
 const corsOptions = {
@@ -31,15 +25,8 @@ const corsOptions = {
     if (envConfig.NODE_ENV === "development" || !origin) {
       callback(null, true);
     } else {
-      callback(
-        new Error(
-          `CORS error: ${origin} is not allowed by CORS`,
-        ),
-        false,
-      );
-      logger.warn(
-        `CORS error: ${origin} is not allowed by CORS`,
-      );
+      callback(new Error(`CORS error: ${origin} is not allowed by CORS`), false);
+      logger.warn(`CORS error: ${origin} is not allowed by CORS`);
     }
   },
 };
@@ -70,10 +57,7 @@ app.use(helmet());
 app.use(ratelimiter);
 
 /** Serve static uploads directory */
-app.use(
-  "/uploads",
-  express.static(path.join(__dirname, "uploads")),
-);
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 /**
  * IIFE: Immediately Invoked Async Function Expression to start the server.
@@ -89,9 +73,7 @@ app.use(
 
     /** Initialized root routes */
     app.use("/api", router);
-    app.use((req, res, next) =>
-      missingRoutes(req, res, next),
-    );
+    app.use((req, res, next) => missingRoutes(req, res, next));
     app.use((error, req, res) => globalError(res, error));
 
     /** Run the server */

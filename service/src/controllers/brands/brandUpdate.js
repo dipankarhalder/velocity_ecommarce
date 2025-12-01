@@ -1,9 +1,6 @@
 /** Custom modules */
 import { logger } from "../../core/logger.core.js";
-import {
-  saveUploadedFile,
-  markPreviousImagesUnused,
-} from "../../core/filehelper.core.js";
+import { saveUploadedFile, markPreviousImagesUnused } from "../../core/filehelper.core.js";
 
 /** Models */
 import { Brand } from "../../models/brand.model.js";
@@ -25,10 +22,7 @@ export const updateBrand = async (req, res) => {
     /** Update basic fields */
     brand.name = name ?? brand.name;
     brand.description = description ?? brand.description;
-    brand.isActive =
-      typeof isActive !== "undefined"
-        ? isActive
-        : brand.isActive;
+    brand.isActive = typeof isActive !== "undefined" ? isActive : brand.isActive;
     brand.updatedBy = userId;
 
     let uploadedFile = null;
@@ -36,18 +30,10 @@ export const updateBrand = async (req, res) => {
     /** Handle brand image upload */
     if (req.file) {
       /** Save new brand image */
-      uploadedFile = await saveUploadedFile(
-        req.file,
-        "brand",
-        userId,
-      );
+      uploadedFile = await saveUploadedFile(req.file, "brand", userId);
 
       /** Mark previous brand image as unused */
-      await markPreviousImagesUnused(
-        "brand",
-        userId,
-        uploadedFile._id,
-      );
+      await markPreviousImagesUnused("brand", userId, uploadedFile._id);
 
       /** Save new image path */
       brand.brandImage = uploadedFile.path;
@@ -66,8 +52,7 @@ export const updateBrand = async (req, res) => {
     logger.error(`Update Brand Error: ${err.message}`);
 
     res.status(500).json({
-      message:
-        "Oops! Something went wrong. Please try again.",
+      message: "Oops! Something went wrong. Please try again.",
       error: err.message,
     });
   }

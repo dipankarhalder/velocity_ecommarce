@@ -15,26 +15,19 @@ export const missingRoutes = (req, res, next) => {
 /** manage error globally */
 export const globalError = (res, error) => {
   logger.error(`Server error: ${error.message}.`);
-  res.status(
-    error.status || StatusCodes.INTERNAL_SERVER_ERROR,
-  );
+  res.status(error.status || StatusCodes.INTERNAL_SERVER_ERROR);
   res.json({
     error: { message: error.message },
   });
 };
 
 export const sendErrorResponse = (res, error) => {
-  logger.error(
-    "Something went wrong, please try again later.",
-  );
-  return res
-    .status(StatusCodes.INTERNAL_SERVER_ERROR)
-    .json({
-      status: StatusCodes.INTERNAL_SERVER_ERROR,
-      message:
-        "Something went wrong, please try again later.",
-      error: error.message,
-    });
+  logger.error("Something went wrong, please try again later.");
+  return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+    status: StatusCodes.INTERNAL_SERVER_ERROR,
+    message: "Something went wrong, please try again later.",
+    error: error.message,
+  });
 };
 
 export const validateFields = (res, messages) => {

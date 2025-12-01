@@ -25,16 +25,11 @@ const clientOptions = {
  */
 export const connectToDatabase = async () => {
   if (!envConfig.MONGO_URI) {
-    throw new Error(
-      "MongoDB URI is not defined in the configuration.",
-    );
+    throw new Error("MongoDB URI is not defined in the configuration.");
   }
 
   try {
-    await mongoose.connect(
-      envConfig.MONGO_URI,
-      clientOptions,
-    );
+    await mongoose.connect(envConfig.MONGO_URI, clientOptions);
     logger.info("Connected to the database successfully.");
   } catch (err) {
     if (err instanceof Error) {
@@ -53,9 +48,7 @@ export const connectToDatabase = async () => {
 export const disconnectFromDatabase = async () => {
   try {
     await mongoose.disconnect();
-    logger.info(
-      "Disconnected from the database successfully.",
-    );
+    logger.info("Disconnected from the database successfully.");
   } catch (err) {
     if (err instanceof Error) {
       throw new Error(err.message);

@@ -1,9 +1,6 @@
 /** Custom modules */
 import { logger } from "../../core/logger.core.js";
-import {
-  saveUploadedFile,
-  markPreviousImagesUnused,
-} from "../../core/filehelper.core.js";
+import { saveUploadedFile, markPreviousImagesUnused } from "../../core/filehelper.core.js";
 
 /** Models */
 import { Brand } from "../../models/brand.model.js";
@@ -31,18 +28,10 @@ export const createBrand = async (req, res) => {
     let uploadedFile = null;
     if (req.file) {
       /** Save file to DB */
-      uploadedFile = await saveUploadedFile(
-        req.file,
-        "brand",
-        userId,
-      );
+      uploadedFile = await saveUploadedFile(req.file, "brand", userId);
 
       /** Mark previous brand images as unused for this user */
-      await markPreviousImagesUnused(
-        "brand",
-        userId,
-        uploadedFile._id,
-      );
+      await markPreviousImagesUnused("brand", userId, uploadedFile._id);
     }
 
     /** Create new brand — pre save hook auto generates slug */
@@ -55,9 +44,7 @@ export const createBrand = async (req, res) => {
     });
 
     await brand.save();
-    logger.info(
-      `Brand created successfully: ${brand.name}`,
-    );
+    logger.info(`Brand created successfully: ${brand.name}`);
 
     res.status(201).json({
       brand,
@@ -68,8 +55,7 @@ export const createBrand = async (req, res) => {
     logger.error(`Create Brand Error: ${err.message}`);
 
     res.status(500).json({
-      message:
-        "Oops! Something went wrong. Please try again.",
+      message: "Oops! Something went wrong. Please try again.",
       error: err.message,
     });
   }
