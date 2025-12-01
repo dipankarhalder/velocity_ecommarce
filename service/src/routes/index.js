@@ -26,6 +26,20 @@ import { listCategory } from "../controllers/category/listCategory.js";
 import { categoryDetails } from "../controllers/category/categoryDetails.js";
 import { deleteCategory } from "../controllers/category/deleteCategory.js";
 
+/** Sub Category */
+import { createSubCategory } from "../controllers/subCategory/createSubCategory.js";
+import { updateSubCategory } from "../controllers/subCategory/updateSubCategory.js";
+import { listSubCategory } from "../controllers/subCategory/listSubCategory.js";
+import { subCategoryDetails } from "../controllers/subCategory/subCategoryDetails.js";
+import { deleteSubCategory } from "../controllers/subCategory/deleteSubCategory.js";
+
+/** Brand */
+import { createProduct } from "../controllers/product/createProduct.js";
+import { updateProduct } from "../controllers/product/updateProduct.js";
+import { listProduct } from "../controllers/product/listProduct.js";
+import { productDetails } from "../controllers/product/productDetails.js";
+import { deleteProduct } from "../controllers/product/deleteProduct.js";
+
 /** Middlewares */
 import { authenticate } from "../middleware/authenticate.middleware.js";
 import { requireRefreshToken } from "../middleware/refreshToken.middleware.js";
@@ -36,6 +50,8 @@ import { upload } from "../middleware/uploadFile.middleware.js";
 import { registerValidation, loginValidation, updateAccountValidation } from "../validate/user.validate.js";
 import { createBrandValidation, updateBrandValidation } from "../validate/brand.validate.js";
 import { createCategoryValidation, updateCategoryValidation } from "../validate/category.validate.js";
+import { createSubCategoryValidation, updateSubCategoryValidation } from "../validate/subcategory.validate.js";
+import { createProductValidation, updateProductValidation } from "../validate/product.validate.js";
 
 /** Initialize router */
 const router = express.Router();
@@ -64,5 +80,19 @@ router.put("/category/update/:id", authenticate, upload.single("categoryImage"),
 router.get("/category/list", authenticate, listCategory);
 router.get("/category/details/:id", authenticate, categoryDetails);
 router.delete("/category/delete/:id", authenticate, deleteCategory);
+
+/** Sub Category */
+router.post("/subCategory/create", authenticate, upload.single("subCategoryImage"), validate(createSubCategoryValidation), createSubCategory);
+router.put("/subCategory/update/:id", authenticate, upload.single("subCategoryImage"), validate(updateSubCategoryValidation), updateSubCategory);
+router.get("/subCategory/list", authenticate, listSubCategory);
+router.get("/subCategory/details/:id", authenticate, subCategoryDetails);
+router.delete("/subCategory/delete/:id", authenticate, deleteSubCategory);
+
+/** Products */
+router.post("/product/create", authenticate, upload.array("images", 10), validate(createProductValidation), createProduct);
+router.put("/product/update/:id", authenticate, upload.array("images", 10), validate(updateProductValidation), updateProduct);
+router.get("/product/list", authenticate, listProduct);
+router.get("/product/details/:id", authenticate, productDetails);
+router.delete("/product/delete/:id", authenticate, deleteProduct);
 
 export default router;

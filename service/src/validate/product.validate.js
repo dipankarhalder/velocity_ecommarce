@@ -1,0 +1,42 @@
+import Joi from "joi";
+
+export const createProductValidation = Joi.object({
+  name: Joi.string().required(),
+  description: Joi.string().required(),
+  shortDescription: Joi.string().optional(),
+  price: Joi.number().required(),
+  salePrice: Joi.number().allow(null).optional(),
+  stock: Joi.number().default(0),
+  sku: Joi.string().required(),
+  category: Joi.string().required(),
+  subCategory: Joi.string().allow(null).optional(),
+  brand: Joi.string().allow(null).optional(),
+  tags: Joi.string().optional(),
+  keywords: Joi.string().optional(),
+  attributes: Joi.string().optional(),
+  variants: Joi.string().optional(),
+  seoTitle: Joi.string().optional(),
+  seoDescription: Joi.string().optional(),
+  isFeatured: Joi.boolean().optional(),
+  isActive: Joi.boolean().optional(),
+});
+
+export const updateProductValidation = Joi.object({
+  name: Joi.string().optional(),
+  description: Joi.string().optional(),
+  shortDescription: Joi.string().optional(),
+  price: Joi.number().optional(),
+  salePrice: Joi.number().allow(null).optional(),
+  stock: Joi.number().optional(),
+  category: Joi.string().optional(),
+  subCategory: Joi.string().optional(),
+  brand: Joi.string().optional(),
+  tags: Joi.string().optional(),
+  keywords: Joi.string().optional(),
+  attributes: Joi.string().optional(),
+  variants: Joi.string().optional(),
+  seoTitle: Joi.string().optional(),
+  seoDescription: Joi.string().optional(),
+  isFeatured: Joi.boolean().optional(),
+  isActive: Joi.boolean().optional(),
+});
